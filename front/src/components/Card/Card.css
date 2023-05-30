@@ -1,0 +1,208 @@
+.card{
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 2rem; 
+}
+.card:hover {
+    transition: .2s ease all;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+.card.ver-menos {
+    max-height: none;
+}
+
+/* ---- thumbnail ---- */
+.card .imagen{
+    width: 100%;
+    position: relative;
+}
+
+.card .imagen img {
+    width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.card .imagen i {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 25px;
+}
+
+/* ---- contenido ---- */
+.card .contenido{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card .contenido h3 {
+    font-size: 23px;
+}
+
+.card .contenido p{
+    margin-left: .5em;
+    margin-bottom: 5px;
+}
+
+.card .contenido .titulo {
+    display: flex;
+    justify-content: space-between;
+    color: var(--colorDos);
+    margin: 0.8em;
+}
+
+.card .contenido .categoria {
+    width: 100%;
+}
+
+.card .contenido .puntuacion {
+    display: flex;
+    align-self: start;
+    background-color: var(--colorDos);
+    color: var(--colorCuatro);
+    grid-gap: 8px;
+    gap: 8px;
+    border-radius: 5px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    padding: 4px;
+    font-size: 15px;
+    text-align: right;
+}
+
+.card .categoria p {
+    display: flex;
+    margin: 0 0;
+    font-size: var(--fs-sm);
+    line-height: 1.25em;
+    align-items: center;
+    color: var(--colorDos);
+    opacity: 0.5;
+    font-weight: bold;
+    font-size: var(--fs-sm);
+    line-height: 1.25em;
+}
+
+.card .categoria i{
+    margin-left: 2%;
+}
+
+.card .ico-caracteristicas {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 0.8em 0.8em;
+    color: var(--colorDos);
+}
+
+.card .contenido .ubicacion,
+.card .contenido .descripcion {
+    padding: 0 0.6em;
+}
+
+.card .ubicacion {
+    font-size: 13px;
+    padding-top: 5px;
+}
+
+.card .ubicacion span {
+    color:var(--colorUno);
+    cursor: pointer;
+}
+
+.card .ubicacion span:hover {
+    font-weight: bold;
+    text-decoration: underline 2px;
+}
+
+.card .ubicacion i {
+    color: var(--colorDos);
+    margin-right: 5px;
+}
+
+.card .contenido .descripcion {
+    display: -webkit-box;
+    max-height: 60px;
+    height: 100%;
+    -webkit-line-clamp: 3;
+    -webkit-line-clamp:initial;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 16px;
+}
+.card .contenido .descripcion.ver-menos {
+    max-height: none;
+}
+
+.card .btn-ver {
+    color: var(--colorUno);
+    font-weight: bold;
+    cursor: pointer;
+    padding: 0 0.6em;
+}
+
+.card .ver-detalle {
+    width: 95%;
+    margin-bottom: 1rem;
+    align-self: center;
+}
+
+@media handheld, screen and (min-width: 550px) {
+    .card{
+        flex-direction: row;
+        min-height: 280px;
+        max-height: 315px;
+    }
+
+    .card .imagen{
+        min-width: 240px;
+        max-width: 350px;
+        min-height: 280px;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+    }
+    
+    .card .imagen img {
+        height: 100%;
+        border-radius: 10px;
+    }
+
+    .card.ver-menos {
+        flex-direction: column;
+        max-height: initial;
+    }
+    .card.ver-menos .imagen {
+        max-width: initial;
+        min-height: 165px;
+    }
+    .card.ver-menos .imagen img {
+        height: 165px;
+        border-radius: 10px 10px 0px 0px;
+        -webkit-border-radius: 10px 10px 0px 0px;
+        -moz-border-radius: 10px 10px 0px 0px;
+        -ms-border-radius: 10px 10px 0px 0px;
+        -o-border-radius: 10px 10px 0px 0px;
+    }
+
+    .card .contenido {
+        width: 100%;
+    }
+
+    .card .contenido .ico-caracteristicas {
+        margin: 0em 0.8em;
+    }
+}

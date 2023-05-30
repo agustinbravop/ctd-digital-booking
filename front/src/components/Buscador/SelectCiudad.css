@@ -1,0 +1,36 @@
+.select-ciudad {
+  width: 100%;
+  height: 40px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.option-ciudad {
+  height: 40px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  color: var(--colorTres);
+}
+
+.option-ciudad i { /* icono map-marker */
+  font-size: 24px;
+}
+
+.option-ciudad__data {
+  font-weight: bold;
+  font-size: 13px;
+}
+
+.option-ciudad__data__ciudad {
+  font-size: 14px;
+  color: black;
+}
+
+/* estilos de react-select sobreescritos */
+.css-1s2u09g-control {
+  height: 40px;
+}

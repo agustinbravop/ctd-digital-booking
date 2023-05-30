@@ -1,0 +1,30 @@
+.loading-bar::after {
+  content: "";
+  height: 3px;
+  display: block;
+  position: absolute;
+  background-color: var(--colorUno);
+  animation: loading-bar 3s forwards linear;
+  -webkit-animation: loading-bar 3s forwards linear;
+}
+
+@keyframes loading-bar {
+  0% {
+    width: 1%;
+  }
+  15% {
+    width: 10%;
+  }
+  40% {
+    width: 20%;
+  }
+  60% {
+    width: 75%;
+  }
+  90% {
+    width: 82%;
+  }
+  100% {
+    width: 99%;
+  }
+}

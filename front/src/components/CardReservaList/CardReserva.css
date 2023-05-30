@@ -1,0 +1,184 @@
+.card-reserva {
+  background: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 1.5rem;
+}
+.card-reserva:hover {
+  transition: 0.2s ease all;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+.card-reserva.ver-menos {
+  max-height: none;
+}
+
+/* ---- thumbnail ---- */
+.card-reserva .imagen {
+  width: 100%;
+  position: relative;
+}
+
+.card-reserva .imagen > img {
+  width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.card-reserva .imagen i {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 25px;
+}
+
+/* ---- contenido ---- */
+.card-reserva .contenido {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-bottom: 3px;
+}
+
+.card-reserva .contenido > h3 {
+  font-size: 23px;
+}
+
+.card-reserva .contenido .titulo {
+  display: flex;
+  justify-content: space-between;
+  color: var(--colorDos);
+  margin: 0.8em;
+  margin-bottom: 0;
+}
+
+.card-reserva .contenido .categoria {
+  width: 100%;
+}
+
+.card-reserva .categoria > p {
+  display: flex;
+  margin: 0 0;
+  font-size: var(--fs-sm);
+  line-height: 1.25em;
+  align-items: center;
+  color: var(--colorDos);
+  opacity: 0.5;
+  font-weight: bold;
+  font-size: var(--fs-sm);
+  line-height: 1.25em;
+}
+
+.card-reserva .categoria > i {
+  margin-left: 2%;
+}
+
+.card-reserva .contenido .ubicacion {
+  padding: 2px 5%;
+  font-size: 13px;
+}
+
+.card-reserva .ubicacion > span {
+  color: var(--colorUno);
+  cursor: pointer;
+}
+.card-reserva .ubicacion > span:hover {
+  font-weight: bold;
+  text-decoration: underline 2px;
+}
+
+.card-reserva .ubicacion > i {
+  color: var(--colorDos);
+  margin-right: 5px;
+}
+
+.card-reserva .ver-detalle {
+  width: 95%;
+  align-self: center;
+  margin-bottom: 0.3rem;
+}
+
+.card-reserva .fechas-reserva {
+  margin: 5px 2.5%;
+  color: var(--colorDos);
+}
+
+.card-reserva .fechas-reserva .check-in,
+.card-reserva .fechas-reserva .check-out {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px var(--colorCuatro) solid;
+  padding: 8px 2.5%;
+}
+
+.card-reserva .fechas-reserva div:last-child {
+  border-bottom: none;
+}
+.card-reserva .fechas-reserva .check-in p:last-child,
+.card-reserva .fechas-reserva .check-out p:last-child {
+  font-weight: bold;
+}
+
+.card-reserva .puntuacion-reserva {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--colorDos);
+  min-height: 35px;
+  font-size: 18px;
+  margin: 0 5%;
+  gap: 5px;
+}
+
+.card-reserva .puntuacion-reserva .puntuacion-estrellas {
+  display: flex;
+  gap: 3px;
+}
+.card-reserva .puntuacion-reserva .puntuacion-estrellas i {
+  cursor: pointer;
+}
+
+@media handheld, screen and (min-width: 550px) {
+  .card-reserva {
+    flex-direction: row;
+    min-height: 280px;
+    max-height: 340px;
+  }
+
+  .card-reserva .imagen {
+    min-width: 240px;
+    max-width: 350px;
+    min-height: 280px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+  }
+
+  .card-reserva .imagen > img {
+    height: 100%;
+    border-radius: 10px;
+  }
+
+  .card-reserva .contenido {
+    width: 100%;
+  }
+
+  .puntuacion-reserva {
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .contenedor-card-reserva .puntuacion-reserva {
+    gap: 15px;
+  }
+
+  .card-reserva .ver-detalle {
+    margin-bottom: 0rem;
+  }
+}

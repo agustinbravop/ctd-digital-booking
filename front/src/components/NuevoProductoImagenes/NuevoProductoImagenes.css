@@ -1,0 +1,82 @@
+.contenedor-imagenes-producto .imagenes-producto {
+  display: flex;
+  box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.15);
+  flex-direction: column;
+  padding: 30px;
+  margin: 0 15px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  gap: 10px;
+}
+
+.contenedor-imagenes-producto h4 {
+  font-size: 20px;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.contenedor-imagenes-producto .imagenes-nueva,
+.contenedor-imagenes-producto .imagenes-cargadas > div {
+  display: flex;
+  gap: 10px;
+}
+
+.contenedor-imagenes-producto .imagenes-cargadas > div {
+  margin-bottom: 10px;
+}
+
+.contenedor-imagenes-producto .imagenes-nueva .form-group,
+.contenedor-imagenes-producto .imagenes-cargadas > div input  {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.contenedor-imagenes-producto .imagenes-nueva .form-group label {
+  font-size: 15px;
+  font-weight: bold;
+}
+.contenedor-imagenes-producto .imagenes-producto input{
+  width: 100%;
+  height: 40px;
+  color: var(--colorDos);
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.contenedor-imagenes-producto .imagenes-producto .btn-agregar {
+  font-size: 24px;
+  font-weight: bold;
+  height: 40px;
+  aspect-ratio: 1 / 1;
+  align-self: flex-end;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contenedor-imagenes-producto .imagenes-cargadas .borrar-img {
+  background-color: var(--colorTres);
+  border: none;
+}
+.contenedor-imagenes-producto .imagenes-cargadas .borrar-img:hover {
+  background-color: var(--colorDos);
+}
+
+
+@media handheld, screen and (max-width: 480px) {
+  .contenedor-imagenes-producto .imagenes-producto {
+    padding: 10px;
+  }
+
+  .contenedor-imagenes-producto .imagenes-nueva {
+    flex-wrap: wrap;
+  }
+
+  .contenedor-imagenes-producto .imagenes-nueva .form-group:last-of-type,
+  .contenedor-imagenes-producto .imagenes-cargadas .form-group:last-of-type {
+    width: calc(100% - 50px);
+  }
+}

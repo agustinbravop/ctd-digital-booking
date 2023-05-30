@@ -1,0 +1,149 @@
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  min-height: 80px;
+  position: fixed;
+  top: 0;
+  z-index: 1010;
+  background: #fff;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.14);
+}
+
+.main-header__navbar {
+  display: flex;
+  align-items: center;
+  padding-right: 0.5em;
+}
+
+/* ---- menu hamburguesa es boton hamburguesa + collapse ---- */
+.main-header__menu-hamburguesa {
+  display: none;
+  padding-right: 0.8em;
+}
+.main-header__menu-hamburguesa button {
+  background: none;
+  border: none;
+}
+.main-header__menu-hamburguesa .show {
+  width: 303px;
+}
+
+.collapse {
+  width: 0px;
+  color: #fff;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: #fafafa;
+  transition: ease width 200ms;
+}
+/* collapse-show se agrega si se abre el menu hamburguesa */
+.collapse.collapse-show {
+  width: 303px;
+}
+.collapse-show .redes-sociales {
+  justify-content: flex-end;
+}
+
+
+/* ---- collapse header ---- */
+.collapse .collapse-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 303px;
+  min-height: 160px;
+  padding: 15px;
+  background: var(--colorUno);
+  font-weight: bold;
+  font-size: 20px;
+  overflow: hidden;
+}
+
+.collapse .collapse-header button {
+  width: 30px;
+  height: 30px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.collapse .collapse-header p {
+  text-align: end;
+}
+
+/* collapse body */
+.collapse-body {
+  width: 303px;
+  font-size: 16px;
+  display: flex;
+  justify-content: flex-end;
+  padding: 15px;
+}
+
+.ul-drawer {
+  width: 100%;
+}
+.btn-cuenta-drawer {
+  list-style: none;
+  padding: 20px;
+  font-weight: 700;
+  text-align: end;
+  border-bottom: 1px solid var(--colorTres);
+}
+.btn-cuenta-drawer a {
+  color: var(--colorDos);
+}
+.btn-cuenta-drawer a:hover {
+  color: var(--colorTres);
+}
+
+/* ---- collapse footer ---- */
+.collapse-footer p {
+  width: 100%;
+  text-align: right;
+  font-weight: bold;
+  color: var(--colorDos);
+  margin: 0 5px;
+  padding: 10px;
+  border-bottom: 1px solid var(--colorTres);
+}
+
+.collapse-footer span {
+  cursor: pointer;
+  color: var(--colorUno);
+}
+
+.btn-header-link {
+  color: var(--colorDos);
+  font-weight: bold;
+  text-align: end;
+  padding: 10px;
+  border-right: 2px solid var(--colorUno);
+}
+
+.btn-header-link:hover {
+  color: #0f101b;
+}
+
+@media handheld, screen and (max-width: 768px) {
+  .logo-lema {
+    display: none;
+  }
+}
+
+@media handheld, screen and (max-width: 550px) {
+  .main-header__navbar {
+    display: none;
+  }
+
+  .main-header__menu-hamburguesa {
+    display: block;
+  }
+}

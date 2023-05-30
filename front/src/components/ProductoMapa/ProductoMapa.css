@@ -1,0 +1,27 @@
+.contenedor-producto-mapa {
+  padding: 2.5em 1.5em 1em;
+  color: var(--colorDos);
+}
+
+.contenedor-producto-mapa h2 {
+  padding-bottom: 0.5em;
+  border-bottom: 1px solid var(--colorUno);
+}
+
+.contenedor-producto-mapa h4 {
+  margin: 13px 0px;
+}
+
+.producto-mapa {
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  overflow: hidden;
+}
+
+.producto-mapa .leaflet-container {
+  width: 100%;
+  height: 450px;
+}

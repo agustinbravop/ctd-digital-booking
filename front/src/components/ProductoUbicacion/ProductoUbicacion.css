@@ -1,0 +1,56 @@
+.producto-ubicacion {
+    position: relative;
+    min-height: 55px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1.5em;
+    color: var(--colorTres);
+    background: var(--colorFondoOscuro);
+}
+
+.producto-ubicacion .lugar i {
+    margin-right: 0.5em;
+}
+
+.producto-ubicacion p {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.producto-ubicacion .lugar {
+    display: flex;
+}
+
+.producto-ubicacion .puntuacion-prod {
+    display: flex;
+    align-items: center;
+    margin-left: 0.5em;
+}
+
+.producto-ubicacion .puntuacion-prod span{
+    background-color: var(--colorTres);
+    border-radius: 10px;
+    color: var(--colorCuatro);
+    font-weight: bold;
+    padding: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    display: flex;
+    align-self: center;
+    margin-left: 0.5em;
+}
+
+.txt-estrellas {
+    white-space: nowrap;
+    text-align: center;
+}
+
+@media handheld, screen and (max-width: 480px) {
+    .producto-ubicacion {
+        padding: 0 0.5em;
+    }
+  }

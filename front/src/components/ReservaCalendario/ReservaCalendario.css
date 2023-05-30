@@ -1,0 +1,114 @@
+.contenedor-reserva-calendario {
+  color: var(--colorDos);
+  width: 100%;
+  padding: 1em 1.5em;
+}
+
+.contenedor-reserva-calendario h2 {
+  margin-bottom: 0.5em;
+}
+
+.reserva-calendario {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 15px 0px;
+  font-size: 15px;
+  background-color: #fff;
+  border: 1px solid #dfe4ea;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  min-height: 260px;
+}
+.reserva-calendario > div {
+  width: 100%;
+}
+.reserva-calendario .react-datepicker {
+  border: none;
+  width: calc(100% + 1px);
+  height: 100%;
+}
+.react-datepicker-wrapper,
+.react-datepicker__input-container {
+  display: block;
+}
+.reserva-calendario .react-datepicker-wrapper {
+  width: 100%;
+}
+
+.reserva-calendario .react-datepicker__month-container {
+  position: relative;
+  width: 50%;
+}
+.reserva-calendario .react-datepicker__month-container:last-child:after {
+  content: ""; /* barra separadora de meses */
+  position: absolute;
+  background: var(--colorFondoOscuro);
+  left: 0;
+  bottom: 5%;
+  height: 90%;
+  width: 3px;
+}
+
+.reserva-calendario .react-datepicker__navigation {
+  position: absolute; /* absolute relative to .react-datepicker */
+  text-align: center;
+  top: 45%;
+  background-color: var(--colorUno);
+  padding: 5px;
+  margin: 0 10px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.reserva-calendario .react-datepicker__navigation:hover {
+  background-color: #1aa198;
+  transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -ms-transition: 0.2s ease all;
+  -o-transition: 0.2s ease all;
+}
+
+.reserva-calendario .react-datepicker__navigation-icon::before {
+  border-color: #fff;
+}
+
+.reserva-calendario .react-datepicker__day--excluded {
+  color: #ccc;
+  text-decoration: line-through;
+}
+.reserva-calendario .react-datepicker__day--excluded:hover {
+  background-color: inherit;
+}
+
+@media handheld, screen and (max-width: 1100px) {
+  .reserva-calendario {
+    padding: 10px 0px;
+  }
+
+  .reserva-calendario .react-datepicker__navigation {
+    top: 0;
+    background-color: white;
+  }
+  .reserva-calendario .react-datepicker__navigation-icon::before {
+    border-color: var(--colorTres);
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .contenedor-reserva-calendario {
+    padding: 1em;
+  }
+
+  .reserva-calendario .react-datepicker__month-container {
+    width: 100%;
+  }
+  .reserva-calendario .react-datepicker__month-container:last-child:after {
+    width: 0;
+  }
+}

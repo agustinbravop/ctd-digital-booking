@@ -1,0 +1,26 @@
+[
+    {
+        "id" : "1",
+        "nombre" : "Casa",
+        "cantidad" : "807.105 casas",
+        "imagen" : "https://cdn.pixabay.com/photo/2016/11/29/03/53/house-1867187_960_720.jpg"
+    },
+    {
+        "id" : "2",
+        "nombre" : "Departamento",
+        "cantidad" : "55.105 departamentos",
+        "imagen" : "https://cdn.pixabay.com/photo/2016/01/19/17/32/apartment-building-1149751_960_720.jpg"
+    },
+    {
+        "id" : "3",
+        "nombre" : "Casa de playa",
+        "cantidad" : "227.103 casas de playa",
+        "imagen" : "https://cdn.pixabay.com/photo/2016/07/08/23/36/beach-house-1505461_960_720.jpg"
+    },
+    {
+        "id" : "4",
+        "nombre" : "Cabaña",
+        "cantidad" : "7.105 cabañas",
+        "imagen" : "https://cdn.pixabay.com/photo/2017/11/16/19/29/cottage-2955582_960_720.jpg"
+    }
+]

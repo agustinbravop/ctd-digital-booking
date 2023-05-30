@@ -1,0 +1,38 @@
+.form-reserva {
+  background-color: var(--colorFondoOscuro);
+  padding-bottom: 10px;
+}
+
+.form-reserva__feedback {
+  color: var(--colorError);
+  text-align: center;
+  padding: 0 10px 10px 10px;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.form-reserva .bloques-reserva {
+  display: flex;
+  width: 100%;
+  padding: 0px 50px;
+}
+
+.form-reserva .bloques-reserva-izq {
+  width: 65%;
+}
+
+@media handheld, screen and (max-width: 980px) {
+    .form-reserva .bloques-reserva {
+    padding: 0;
+  }
+}
+
+@media handheld, screen and (max-width: 840px) {
+  .form-reserva .bloques-reserva {
+    flex-direction: column;
+  }
+
+  .form-reserva .bloques-reserva-izq {
+    width: 100%;
+  }
+}

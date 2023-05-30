@@ -1,0 +1,25 @@
+.card-list{
+  background-color: var(--colorFondoOscuro);
+  font-size: 18px;
+  padding: 1rem;
+}
+
+.card-list h2{
+  color: var(--colorDos);
+  margin-bottom: 1rem;
+}
+
+.card-list li{
+  display: flex;
+}
+
+.card-list ul {
+  gap: 1rem;
+}
+
+@media (min-width: 1024px) {
+  .card-list ul{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+  }
+}

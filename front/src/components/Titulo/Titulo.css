@@ -1,0 +1,35 @@
+.background-titulo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 60px;
+    padding: 0 1.5em;
+    background: var(--colorTres);
+    color: #FFF;
+}
+
+.txt-titulo {
+    font-size: 24px;
+}
+
+.background-titulo i {
+    font-size: 35px;
+    transition: ease 0.2s;
+    -webkit-transition: ease 0.2s;
+    -moz-transition: ease 0.2s;
+    -ms-transition: ease 0.2s;
+    -o-transition: ease 0.2s;
+    cursor: pointer;
+}
+.background-titulo i:hover {
+    font-size: 40px;
+}
+.background-titulo i:active {
+    color: var(--colorUno);
+}
+    
+@media handheld, screen and (max-width: 480px) {
+    .background-titulo {
+        padding: 0 0.5em;
+    }
+  }

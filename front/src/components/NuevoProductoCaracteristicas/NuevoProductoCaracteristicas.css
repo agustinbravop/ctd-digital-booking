@@ -1,0 +1,101 @@
+#form-nuevo-prod .checkbox-atributos .form-group label {
+    font-weight: bold;
+}
+
+#form-nuevo-prod .checkbox-atributos .checkbox-atributos-nuevo .form-group input {
+    background-color: #fff;
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    border: none;
+}
+
+.contenedor-atributos-producto h4 {
+    font-size: 20px;
+    padding: 20px;
+    margin-top: 5px;
+}
+
+.checkbox-atributos {
+    box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.15);
+    background-color: white;
+    padding: 30px;
+    margin: 0 15px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    font-size: 15px;
+}
+
+.checkbox-atributos-existentes {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    margin-bottom: 25px;
+    gap: 15px;
+}
+
+.checkbox-atributos-existentes .form-group-checkbox {
+    width: 23%;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.checkbox-atributos-nuevo {
+    position: relative;
+    display: flex;
+    gap: 10px;
+    border: none;
+}
+.checkbox-atributos-nuevo:before {
+    content: "";
+    position: absolute;
+    background: var(--colorFondoOscuro);
+    top: -40px;
+    width: 100%;
+    height: 2px;
+}
+
+.checkbox-atributos-nuevo legend {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.checkbox-atributos-nuevo .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.checkbox-atributos-nuevo .btn-agregar {
+    font-size: 24px;
+    font-weight: bold;
+    height: 40px;
+    aspect-ratio: 1 / 1;
+    align-self: flex-end;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+@media handheld, screen and (max-width: 800px) {
+    .checkbox-atributos-existentes .form-group-checkbox {
+        width: 45%;
+    }
+}
+
+@media handheld, screen and (max-width: 480px) {
+    .checkbox-atributos-nuevo,
+    .checkbox-atributos-existentes {
+      flex-wrap: wrap;
+    }
+    .checkbox-atributos-nuevo .form-group:last-of-type {
+        width: calc(100% - 50px);
+    }
+
+    .checkbox-atributos-existentes .form-group-checkbox {
+        width: 100%;
+    }
+}

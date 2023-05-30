@@ -1,0 +1,133 @@
+.contenedor-login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  min-height: calc((100vh - 80px) - 65px)
+}
+
+.form-login {
+  width: 450px;
+  height: 450px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column wrap;
+  background: #fff;
+  gap: 10px;
+  color: var(--colorDos);
+  font-weight: 500;
+}
+
+.form-login h1 {
+  color: var(--colorUno);
+  margin-bottom: 10px;
+}
+
+.form-login label {
+  text-align: left;
+  width: 100%;
+}
+
+.form-login input {
+  width: 100%;
+  height: 40px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  padding: 10px;
+  background: none;
+  border: none;
+}
+
+.form-login button[type="submit"] {
+  margin: 0.5em;
+}
+.form-login .text-muted {
+  margin-top: 0.5em;
+}
+
+/* estilos para cada form-group (par de label-input) */
+
+.form-group {
+  width: 100%;
+}
+.form-group label:focus-within {
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+.form-login input:focus {
+  box-shadow: 0 2px 0.5em 1px rgba(0, 0, 0, 0.3);
+}
+
+/* Para el icono de mostrar contraseña del PasswordInput */
+.form-group-pass {
+  position: relative;
+}
+.show-pass-icon {
+  position: absolute;
+  top: 35px;
+  right: 20px;
+}
+.show-pass-icon.fa-eye-slash {
+  opacity: 0.66;
+}
+
+/* para mensajes de error (feedback) */
+.small-feedback {
+  text-align: right;
+  color: #ff0000;
+  font-weight: bold;
+  font-size: var(--fs-xs);
+  display: block;
+}
+.form-group .input-feedback {
+  border: 1px solid #ff0000;
+  background-color: #ffe1e1;
+}
+.form-feedback {
+  width: 100%;
+  text-align: center;
+  color: #ff0000;
+  font-size: var(--fs-md);
+}
+
+.mje-reserva {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  max-width: 450px;
+  font-size: 16px;
+  color: #B00020;
+  background-color: #ffbeb09a;
+  padding: 20px;
+  margin: 20px 20px 0 20px;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+
+.mje-reserva i {
+  font-size: 28px;
+  margin-right: 8px;
+}
+
+@media (max-width: 768px) {
+  .form-login {
+    width: 346px;
+  }
+  .text-input {
+    width: 346px;
+  }
+}
+
+@media (max-width: 480px) {
+  .form-login {
+    width: 90%;
+  }
+  .text-input {
+    width: 300px;
+  }
+}

@@ -1,0 +1,103 @@
+@import "~react-image-gallery/styles/css/image-gallery.css";
+
+.productos-imagenes-galeria {
+  position: relative;
+  width: 720px;
+}
+.productos-imagenes-galeria__cerrar {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  z-index: 4;
+  font-size: 24px;
+  color: white;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+/* ---- clases sobreescritas de react-image-gallery ---- */
+
+.productos-imagenes-galeria .image-gallery-slides {
+  border-radius: 8px 8px 0 0;
+}
+
+.productos-imagenes-galeria .image-gallery-slide .image-gallery-image {
+  object-fit: cover;
+}
+
+.productos-imagenes-galeria .image-gallery {
+  border-radius: 8px;
+  box-shadow: 
+    -4px 4px 4px rgba(0, 0, 0, 0.25),
+    4px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+/* -- thumbnails -- */
+.productos-imagenes-galeria .image-gallery-thumbnails {
+  margin: 35px 5px 0px 5px;
+}
+
+.productos-imagenes-galeria .image-gallery-thumbnail {
+  border-radius: 13px;
+  width: auto;
+  transition: border .2s ease-out;
+  -webkit-border-radius: 13px;
+  -moz-border-radius: 13px;
+  -ms-border-radius: 13px;
+  -o-border-radius: 13px;
+}
+.productos-imagenes-galeria .image-gallery-thumbnail:hover,
+.productos-imagenes-galeria .image-gallery-thumbnail:focus,
+.productos-imagenes-galeria .image-gallery-thumbnail.active {
+  border: 4px solid var(--colorTres);
+}
+
+.productos-imagenes-galeria .image-gallery-thumbnail-image {
+  border-radius: 8px;
+  width: 148px;
+}
+
+/* -- index -- */
+.productos-imagenes-galeria .image-gallery-index {
+  top: 364px; /* height + 4 */
+  right: calc(50% - 50px);
+  color: var(--colorDos);
+  font-weight: bold;
+  background: none;
+}
+
+/* -- flechitas nav customizadas -- */
+.productos-imagenes-galeria .image-gallery-custom-right-nav,
+.productos-imagenes-galeria .image-gallery-custom-left-nav {
+  position: absolute;
+  top: 40%;
+  z-index: 4;
+  margin: 10px;
+  /* 14 y 17 para compensar height vs width */
+  padding: 17px;
+  color: white;
+  border-radius: 50%;
+  background: transparent;
+  font-size: 24px;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border: none;
+  cursor: pointer;
+}
+.productos-imagenes-galeria .image-gallery-custom-right-nav {
+  /* ubicado al lado opuesto al left-nav */
+  right: 0px;
+}
+
+.productos-imagenes-galeria__cerrar:hover,
+.image-gallery-custom-right-nav:hover,
+.image-gallery-custom-left-nav:hover {
+  color: var(--colorUno);
+  font-size: 30px;
+  transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -ms-transition: 0.2s ease all;
+  -o-transition: 0.2s ease all;
+}

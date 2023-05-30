@@ -1,0 +1,12 @@
+/* ---- Heart ---- */
+.fav-heart {
+  cursor: pointer;
+}
+
+.fav-heart.fas.fa-heart { /* lleno - on */
+  color: var(--colorFav);
+}
+
+.fav-heart.far.fa-heart { /* vacio - off */
+  color: var(--colorTres);
+}

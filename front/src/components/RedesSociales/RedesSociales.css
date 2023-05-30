@@ -1,0 +1,15 @@
+.redes-sociales {
+    display: flex;
+    align-items: center;
+}
+
+.redes-sociales li {
+    list-style: none;
+    text-align: end;
+    padding: 1.2rem 0.8rem;
+}
+
+.redes-sociales i {
+    font-size: 25px;
+    color: var(--colorTres);
+}

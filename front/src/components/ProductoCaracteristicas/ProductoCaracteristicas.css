@@ -1,0 +1,51 @@
+.producto-caracteristicas {
+    padding: 1em;
+    color: var(--colorDos);
+}
+
+.producto-caracteristicas h2 {
+    padding-bottom: 0.5em;
+    border-bottom: 1px solid var(--colorUno);
+}
+
+.producto-caracteristicas .caracteristicas {
+    margin-top: 1.5em;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.producto-caracteristicas .caracteristicas li {
+    color: var(--colorDos);
+    width: 25%;
+    padding: 1em;
+}
+
+.producto-caracteristicas .caracteristicas i{
+    color: var(--colorUno);
+    margin-right: 15px;
+}
+
+@media handheld, screen and (max-width: 768px) {
+    .producto-caracteristicas .caracteristicas li {
+        width: 50%;
+    }
+  }
+  
+  @media handheld, screen and (max-width: 480px) {
+    .producto-caracteristicas {
+        padding: 0 1em;
+    }
+
+    .producto-caracteristicas .caracteristicas li {
+        padding: 1em;
+    }
+
+    .producto-caracteristicas .caracteristicas li {
+      font-size: 15px;
+    }
+
+    .producto-caracteristicas .caracteristicas i{
+        margin-right: 5px;
+    }
+  }
+  

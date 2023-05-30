@@ -1,0 +1,69 @@
+.contenedor-politicas-producto h4 {
+  font-size: 20px;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.contenedor-politicas-producto .politicas-producto {
+  box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+  margin: 0 15px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  grid-gap: 8px;
+  gap: 8px;
+}
+
+.contenedor-politicas-producto .politica-producto {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  position: relative;
+}
+.contenedor-politicas-producto
+  .politica-producto:not(.contenedor-politicas-producto
+    .politica-producto:last-child)::after {
+  content: "";
+  position: absolute;
+  background: var(--colorFondoOscuro);
+  right: -16px;
+  width: 2px;
+  height: 105%;
+}
+
+.contenedor-politicas-producto .politica-producto h5 {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.contenedor-politicas-producto .politica-producto label {
+  font-size: 15px;
+  font-weight: bold;
+  margin: 12px 0;
+}
+
+.contenedor-politicas-producto .politica-producto textarea {
+  border: none;
+  padding: 10px;
+  resize: none;
+}
+
+@media handheld, screen and (max-width: 800px) {
+  .contenedor-politicas-producto .politica-producto {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .contenedor-politicas-producto
+    .politica-producto:not(.contenedor-politicas-producto
+      .politica-producto:last-child)::after {
+    display: none;
+  }
+}

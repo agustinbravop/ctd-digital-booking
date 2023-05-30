@@ -1,0 +1,22 @@
+.btn-pages {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 10px 0;
+}
+
+.btn-pag {
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+}
+
+.btn-pages .btn-pag.active {
+    background: var(--colorTres);
+    color: #FFF;
+}
+
+.btn-pages .btn-pag.active:hover {
+    color: #FFF;
+    background-color: var(--colorDos);
+}

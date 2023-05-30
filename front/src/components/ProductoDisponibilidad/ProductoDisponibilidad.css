@@ -1,0 +1,201 @@
+.producto-disponibilidad {
+  margin-top: 1em;
+  padding: 2em 1.5em;
+  position: relative;
+  background: var(--colorFondoOscuro);
+  color: var(--colorDos);
+}
+
+.contenedor-disponibilidad {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 4em;
+}
+
+.producto-disponibilidad h2 {
+  margin-bottom: 1em;
+}
+
+.disponibilidad__calendario,
+.reservas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.disponibilidad__calendario {
+  width: 65%;
+}
+
+.disponibilidad__calendario div .react-datepicker {
+  width: 750px;
+  height: 270px;
+  border: none;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+  display: flex;
+}
+
+.disponibilidad__calendario .react-datepicker__month-container {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+.disponibilidad__calendario
+  .react-datepicker__month-container:last-child:after {
+  content: "";
+  position: absolute;
+  background: var(--colorFondoOscuro);
+  left: 0;
+  bottom: 5%;
+  height: 90%;
+  width: 3px;
+}
+
+.disponibilidad__calendario .react-datepicker__navigation {
+  position: absolute;
+  top: 115px;
+  background-color: var(--colorUno);
+  padding: 5px;
+  margin: 10px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.disponibilidad__calendario .react-datepicker__navigation:hover {
+  background-color: #1aa198;
+  transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -ms-transition: 0.2s ease all;
+  -o-transition: 0.2s ease all;
+}
+
+.disponibilidad__calendario .react-datepicker__navigation-icon::before {
+  border-color: #fff;
+}
+
+.disponibilidad__calendario
+  .react-datepicker__day:not(.react-datepicker__day--in-range).react-datepicker__day--disabled {
+  color: #ccc;
+  background-color: white;
+}
+.disponibilidad__calendario
+  .react-datepicker__day:not(.react-datepicker__day--in-range):not(.react-datepicker__day--disabled) {
+  background-color: white !important;
+  color: inherit !important;
+  cursor: default;
+}
+.disponibilidad__calendario .react-datepicker__day--in-range {
+  cursor: default !important;
+}
+
+.contenedor-reservas {
+  width: 35%;
+}
+
+.reservas {
+  flex-direction: column;
+  font-weight: bold;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+  padding: 1em;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  gap: 1em;
+}
+
+.btn-reserva {
+  max-width: 346px;
+  width: 100%;
+}
+
+@media handheld, screen and (max-width: 1400px) {
+  .contenedor-disponibilidad {
+    margin: 0 1em;
+  }
+
+  .disponibilidad__calendario div .react-datepicker {
+    width: 650px;
+  }
+
+  .contenedor-reservas {
+    width: 30%;
+  }
+}
+
+@media handheld, screen and (max-width: 1050px) {
+  .contenedor-disponibilidad {
+    margin: 0;
+  }
+
+  .disponibilidad__calendario div .react-datepicker {
+    width: 550px;
+  }
+
+  .disponibilidad__calendario .react-datepicker__navigation {
+    position: absolute;
+    top: 2px;
+    background-color: transparent;
+    padding: 5px;
+    margin: 10px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+  }
+
+  .disponibilidad__calendario .react-datepicker__navigation-icon::before {
+    border-color: var(--colorDos);
+  }
+}
+
+@media handheld, screen and (max-width: 890px) {
+  .contenedor-disponibilidad {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .disponibilidad__calendario {
+    width: 100%;
+  }
+
+  .disponibilidad__calendario div .react-datepicker {
+    width: 650px;
+  }
+
+  .contenedor-reservas {
+    width: 100%;
+  }
+
+  .reservas {
+    flex-direction: row;
+    box-shadow: none;
+    background-color: transparent;
+    padding: 1em;
+  }
+}
+
+@media handheld, screen and (max-width: 690px) {
+  .disponibilidad__calendario div .react-datepicker {
+    width: 100%;
+  }
+}
+
+@media handheld, screen and (max-width: 490px) {
+  .disponibilidad__calendario .react-datepicker__month-container {
+    width: 100%;
+  }
+
+  .reservas {
+    flex-direction: column;
+  }
+}

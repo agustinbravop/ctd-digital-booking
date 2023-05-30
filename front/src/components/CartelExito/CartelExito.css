@@ -1,0 +1,37 @@
+.cartel-exito {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc((100vh - 80px) - 65px);
+  background-color: #c4c4c41f;
+}
+
+.cartel-exito .contenedor {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 640px;
+  min-height: 305px;
+  background: #ffffff;
+  border: 1px solid #dfe4ea;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  margin: 30px;
+  padding: 15px;
+  text-align: center;
+}
+
+.cartel-exito .txt-gracias {
+  font-size: 24px;
+  color: var(--colorUno);
+  font-weight: bold;
+  margin: 20px 0px 10px 0px;
+}
+
+.cartel-exito .txt-exito {
+  font-size: 20px;
+  color: var(--colorDos);
+  font-weight: bold;
+  margin-bottom: 20px;
+}

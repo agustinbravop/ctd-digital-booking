@@ -1,0 +1,35 @@
+.main-footer {
+  background: var(--colorUno);
+  color: white;
+  height: 65px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 20px;
+}
+
+.main-footer .redes-sociales i {
+  color: white;
+  width: auto;
+  transition: color 200ms ease-out;
+}
+
+.main-footer .redes-sociales i:hover {
+  color: var(--colorTres);
+}
+
+.copyright {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.copyright img {
+  height: 30px;
+}
+
+@media handheld, screen and (max-width: 480px) {
+  .main-footer .redes-sociales {
+    display: none;
+  }
+}
